@@ -1,0 +1,315 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Command · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ethereum.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Blogs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="command.html">
+            
+                <a href="command.html">
+            
+                    
+                    Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="ethereum.html">
+            
+                <a href="ethereum.html">
+            
+                    
+                    Ethereum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Command</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>cat /proc/meminfo
+ firewall-cmd --list-all
+ view /etc/sysconfig/network&#x305B;&#x3068;&#x304E;&#x308F;&#x304B;&#x307F;&#x3072;&#x3068;&#x3048;</p>
+<p>php artisan make:migration create_master_card_table --create=master_card
+php artisan make:seeder UserSeeder</p>
+<p>php artisan make:controller PurchaseController --resource --model=Purchase</p>
+<p>geth --rinkeby --syncmode=fast --cache=2048
+geth --rinkeby account new
+geth --rinkeby --verbosity 0 console</p>
+<p>eth.sendTransaction({
+from: eth.accounts[0],
+to: &quot;0x07afc8F81Fdd6eF02C116cccF116cFD5864800aC&quot;, value: 1e17,
+gas: 90e3,
+gasPrice: 20e9
+})
+personal.unlockAccount(eth.accounts[0], password)</p>
+<p>remixd -s /Users/ace/work/game_blockchain/source/nifty-game  --remix-ide <a href="https://remix.ethereum.org" target="_blank">https://remix.ethereum.org</a></p>
+<p>begin nifty-game
+ganache-cli --gasLimit 0xffffffffff -p 8545
+geth attach <a href="http://127.0.0.1:8545" target="_blank">http://127.0.0.1:8545</a>
+curl -X POST --data &apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;eth_sendTransaction&quot;,&quot;params&quot;:[{&quot;from&quot;: &quot;0xdd940cc5fefb7e32bd8d5307f674ed9b6d27c092&quot;, &quot;to&quot;: &quot;0x1b7543ECeA2ccbEFfCc3231117350Af4B818428B&quot;, value: &quot;10000000000000000&quot;, data: &quot;0x1249c58b&quot;}],&quot;id&quot;:1}&apos; <a href="http://localhost:8545" target="_blank">http://localhost:8545</a></p>
+<p>curl -X POST --data &apos;{&quot;id&quot;:5976625957778,&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;params&quot;:[&quot;0xf8721b850430e23400836170d4941b7543ecea2ccbeffcc3231117350af4b818428b872386f26fc10000841249c58b822d45a057daba1214011be74537cd3e7c3f789b200642eddf19963ba3f554ea69fd3e8ea02a74e67634ff85bce9f4f71a706dd4b7649d2d066d3f4e6374419226e1f48fcc&quot;],&quot;method&quot;:&quot;eth_sendRawTransaction&quot;&apos; <a href="http://localhost:8545" target="_blank">http://localhost:8545</a></p>
+<p>curl -X POST --data &apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;eth_sendTransaction&quot;,&quot;params&quot;:[{&quot;from&quot;: &quot;0xd4f94003d484b2152Ba500418c5FDdaaa6ccfB6F&quot;, &quot;to&quot;: &quot;0x1b7543ECeA2ccbEFfCc3231117350Af4B818428B&quot;, value: &quot;10000000000000000&quot;, data: &quot;0x1249c58b&quot;}],&quot;id&quot;:1}&apos; <a href="http://localhost:8545" target="_blank">http://localhost:8545</a></p>
+<p>sudo npm install -g --unsafe-perm=true --allow-root</p>
+<p>METoken.deployed().then(instance =&gt; { instance.balanceOf(accounts[0]).then(console.log) })</p>
+<p>METoken.deployed().then(instance =&gt; { instance.transfer(accounts[2], 100000) })</p>
+<p>METoken.deployed().then(instance =&gt; { instance.balanceOf(accounts[2]).then(console.log) })</p>
+<p>METoken.deployed().then(instance =&gt; { instance.transfer(Faucet.address, 100000) })</p>
+<p>METoken.deployed().then(instance =&gt; { instance.balanceOf(Faucet.address).then(console.log)})</p>
+<p> METoken.deployed().then(instance =&gt; { instance.balanceOf(Faucet.address).then(a =&gt; console.log(a.toNumber()))})</p>
+<p>METoken.deployed().then(instance =&gt; { instance.approve(METFaucet.address, 100000) })</p>
+<p>METoken.deployed().then(instance =&gt; { instance.balanceOf(web3.eth.accounts[2]).then(console.log) })</p>
+<p>METFaucet.deployed().then(instance =&gt; { instance.withdraw(1000, {from:accounts[1]}) } )</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Blogs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ethereum.html" class="navigation navigation-next " aria-label="Next page: Ethereum">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Command","level":"1.2.1","depth":2,"next":{"title":"Ethereum","level":"1.2.2","depth":2,"path":"blogs/ethereum.md","ref":"blogs/ethereum.md","articles":[]},"previous":{"title":"Blogs","level":"1.2","depth":1,"path":"blogs/README.md","ref":"blogs/README.md","articles":[{"title":"Command","level":"1.2.1","depth":2,"path":"blogs/command.md","ref":"blogs/command.md","articles":[]},{"title":"Ethereum","level":"1.2.2","depth":2,"path":"blogs/ethereum.md","ref":"blogs/ethereum.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu","livereload"],"pluginsConfig":{"collapsible-menu":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"blogs/command.md","mtime":"2020-06-14T20:53:21.067Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-14T08:04:51.393Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
