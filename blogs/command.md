@@ -60,3 +60,44 @@ METoken.deployed().then(instance => { instance.approve(METFaucet.address, 100000
 METoken.deployed().then(instance => { instance.balanceOf(web3.eth.accounts[2]).then(console.log) })
 
 METFaucet.deployed().then(instance => { instance.withdraw(1000, {from:accounts[1]}) } )
+
+CryptoHerosToken.deployed().then(instance => {console.log(instance) } )
+
+
+
+ CryptoHerosToken.deployed().then(function(contract)  {contract.numbers.call().then(function(v) {console.log(v)})})
+ CryptoHerosToken.deployed().then(ins => ins.numbers.call(0).then(console.log))
+ CryptoHerosToken.deployed().then(ins => ins.descriptions.call(0).then(console.log))
+ CryptoHerosToken.deployed().then(ins => ins.images.call(0).then(console.log))
+
+
+
+
+CryptoHerosToken.deployed().then(instance => { instance.balanceOf(instance.address).then(console.log)})
+
+CryptoHerosToken.deployed().then(instance => { instance.withdraw(1, {from:accounts[0]}) } )
+CryptoHerosToken.deployed().then(ins => ins.mint({from: accounts[0], value: web3.utils.toWei("5", "ether")}))
+
+
+======
+CryptoHerosToken.deployed().then(instance => {instance.initNumberAndDescription(0, 'description0').then(console.log)} )
+CryptoHerosToken.deployed().then(ins => ins.initImage('QmdiXLTJx7cdfCpTmwvLt4HVH3dFJXp77Sx6zmhe5WWTH5?filename=KakaoTalk_Photo_2020-05-06-22-49-27.jpeg').then(console.log))
+CryptoHerosToken.deployed().then(ins => ins.initBackground('#388E3C').then(console.log))
+=========
+
+
+
+remixd -s /Users/ace/work/game_blockchain/source/nifty-game --remix-ide https://remix.ethereum.org
+
+
+
+web3.eth.getPastLogs({ address: "0x680F5694C1e76980FD553caF9336A9cf6036B088" }).then(console.log);
+-----------
+CryptoHerosToken.deployed().then(instance => { instance.ownerOf(0) } )
+CryptoHerosToken.deployed().then(instance => { instance.getOwnedTokens('').then(console.log) } )
+
+
+CryptoHerosToken.deployed().then(instance => { instance.getOwnedTokens('').then(res => { for(let i = 0; i < res.length; i++) { instance.getTokenProperty(res[i]).then(console.log) } })})
+
+
+

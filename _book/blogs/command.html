@@ -225,6 +225,23 @@ curl -X POST --data &apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot
 <p>METoken.deployed().then(instance =&gt; { instance.approve(METFaucet.address, 100000) })</p>
 <p>METoken.deployed().then(instance =&gt; { instance.balanceOf(web3.eth.accounts[2]).then(console.log) })</p>
 <p>METFaucet.deployed().then(instance =&gt; { instance.withdraw(1000, {from:accounts[1]}) } )</p>
+<p>CryptoHerosToken.deployed().then(instance =&gt; {console.log(instance) } )</p>
+<p> CryptoHerosToken.deployed().then(function(contract)  {contract.numbers.call().then(function(v) {console.log(v)})})
+ CryptoHerosToken.deployed().then(ins =&gt; ins.numbers.call(0).then(console.log))
+ CryptoHerosToken.deployed().then(ins =&gt; ins.descriptions.call(0).then(console.log))
+ CryptoHerosToken.deployed().then(ins =&gt; ins.images.call(0).then(console.log))</p>
+<p>CryptoHerosToken.deployed().then(instance =&gt; { instance.balanceOf(instance.address).then(console.log)})</p>
+<p>CryptoHerosToken.deployed().then(instance =&gt; { instance.withdraw(1, {from:accounts[0]}) } )
+CryptoHerosToken.deployed().then(ins =&gt; ins.mint({from: accounts[0], value: web3.utils.toWei(&quot;5&quot;, &quot;ether&quot;)}))</p>
+<p>======
+CryptoHerosToken.deployed().then(instance =&gt; {instance.initNumberAndDescription(0, &apos;description0&apos;).then(console.log)} )
+CryptoHerosToken.deployed().then(ins =&gt; ins.initImage(&apos;QmdiXLTJx7cdfCpTmwvLt4HVH3dFJXp77Sx6zmhe5WWTH5?filename=KakaoTalk_Photo_2020-05-06-22-49-27.jpeg&apos;).then(console.log))</p>
+<h1 id="cryptoherostokendeployedthenins--insinitbackground388e3cthenconsolelog">CryptoHerosToken.deployed().then(ins =&gt; ins.initBackground(&apos;#388E3C&apos;).then(console.log))</h1>
+<p>remixd -s /Users/ace/work/game_blockchain/source/nifty-game --remix-ide <a href="https://remix.ethereum.org" target="_blank">https://remix.ethereum.org</a></p>
+<h2 id="web3ethgetpastlogs-address-0x680f5694c1e76980fd553caf9336a9cf6036b088-thenconsolelog">web3.eth.getPastLogs({ address: &quot;0x680F5694C1e76980FD553caF9336A9cf6036B088&quot; }).then(console.log);</h2>
+<p>CryptoHerosToken.deployed().then(instance =&gt; { instance.ownerOf(0) } )
+CryptoHerosToken.deployed().then(instance =&gt; { instance.getOwnedTokens(&apos;&apos;).then(console.log) } )</p>
+<p>CryptoHerosToken.deployed().then(instance =&gt; { instance.getOwnedTokens(&apos;&apos;).then(res =&gt; { for(let i = 0; i &lt; res.length; i++) { instance.getTokenProperty(res[i]).then(console.log) } })})</p>
 
                                 
                                 </section>
@@ -268,7 +285,7 @@ curl -X POST --data &apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Command","level":"1.2.1","depth":2,"next":{"title":"Ethereum","level":"1.2.2","depth":2,"path":"blogs/ethereum.md","ref":"blogs/ethereum.md","articles":[]},"previous":{"title":"Blogs","level":"1.2","depth":1,"path":"blogs/README.md","ref":"blogs/README.md","articles":[{"title":"Command","level":"1.2.1","depth":2,"path":"blogs/command.md","ref":"blogs/command.md","articles":[]},{"title":"Ethereum","level":"1.2.2","depth":2,"path":"blogs/ethereum.md","ref":"blogs/ethereum.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu","livereload"],"pluginsConfig":{"collapsible-menu":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"blogs/command.md","mtime":"2020-06-14T20:53:21.067Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-14T08:04:51.393Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Command","level":"1.2.1","depth":2,"next":{"title":"Ethereum","level":"1.2.2","depth":2,"path":"blogs/ethereum.md","ref":"blogs/ethereum.md","articles":[]},"previous":{"title":"Blogs","level":"1.2","depth":1,"path":"blogs/README.md","ref":"blogs/README.md","articles":[{"title":"Command","level":"1.2.1","depth":2,"path":"blogs/command.md","ref":"blogs/command.md","articles":[]},{"title":"Ethereum","level":"1.2.2","depth":2,"path":"blogs/ethereum.md","ref":"blogs/ethereum.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu","livereload"],"pluginsConfig":{"collapsible-menu":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"blogs/command.md","mtime":"2020-06-16T13:18:02.210Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-14T08:04:51.393Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
